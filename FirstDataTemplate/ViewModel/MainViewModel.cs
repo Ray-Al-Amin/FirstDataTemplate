@@ -21,7 +21,7 @@ namespace FirstDataTemplate.ViewModel
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
-
+        
         public ObservableCollection<ItemVM> Items { get; set; }
         public ObservableCollection<string> PrioList { get; set; }
         public ItemVM NewItem { get; set; }
@@ -31,7 +31,9 @@ namespace FirstDataTemplate.ViewModel
 
         public MainViewModel()
         {
+            Items = new ObservableCollection<ItemVM>();
             NewItem = new ItemVM();
+
             PrioList = new ObservableCollection<string>() { "Hoch", "Mittel", "Niedrig" };
             AddBtnClickCmd = new RelayCommand(
                 //Action
