@@ -11,5 +11,10 @@
         {
             get { return Price * Amount; }
         }
+
+        public ItemVM()
+        {
+            OrderId = "";
+        }
     }
 }

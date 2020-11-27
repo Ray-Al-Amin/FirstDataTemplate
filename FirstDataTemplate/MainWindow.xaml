@@ -37,7 +37,7 @@
             <Label Grid.Row="3" Content="Priorität" Margin="5" />
             <ComboBox Grid.Row="3" Grid.Column="1" Margin="5" SelectedItem="{Binding SelectedItem}" ItemsSource="{Binding PrioList}" />
 
-            <Label Grid.Row="4" Content="Bestell-ID" Margin="5" />
+            <Label Grid.Row="4" Content="Price" Margin="5" />
             <TextBox Grid.Row="4" Grid.Column="1" Margin="5" Text="{Binding NewItem.Price}" />
 
             <Label Grid.Row="5" Content="Gesamtpreis" Margin="5" />

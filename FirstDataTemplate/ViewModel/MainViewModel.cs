@@ -31,7 +31,15 @@ namespace FirstDataTemplate.ViewModel
 
         public MainViewModel()
         {
+            NewItem = new ItemVM();
             PrioList = new ObservableCollection<string>() { "Hoch", "Mittel", "Niedrig" };
+            AddBtnClickCmd = new RelayCommand(
+                //Action
+                () => { Items.Add(NewItem); },
+                () =>
+                {
+                    return NewItem.OrderId.Length > 0;
+                });
         }
     }
 }
